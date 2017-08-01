@@ -35,7 +35,11 @@ class AuthExample extends React.Component {
 const Public = () => <h3>Public</h3>
 
 const fakeAuth = {
-  isAuthenticated: false
+  isAuthenticated: false,
+  authenticate(cb) {
+    this.isAuthenticated = true;
+    setTimeout(cb, 100); //fake async
+  }
 }
 
 export default AuthExample;
