@@ -50,4 +50,17 @@ const fakeAuth = {
   }
 };
 
+const AuthButton = withRouter( ({ history }) => (
+  fakeAuth.isAuthenticated ? (
+    <p>
+    Welcome!
+    <button onClick={() => {
+      fakeAuth.signout( () => {history.push('/')} )
+    }}
+    </p>
+  ) : (
+    <p>You are not logged in</p>
+  )
+))
+
 export default AuthExample;
