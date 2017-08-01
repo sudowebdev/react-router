@@ -31,4 +31,7 @@ class AuthExample extends React.Component {
   }
 }
 
+
+const Public = () => <h3>Public</h3>
+
 export default AuthExample;
