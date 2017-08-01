@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ShowTheLocationWithRouter from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+ReactDOM.render(
+  (
+    <Router>
+      <div>
+        <ul>
+          <li><Link to="/withRouter">To withRouter</Link></li>
+        </ul>
+        <Route path="/withRouter" component={ShowTheLocationWithRouter} />
+      </div>
+    </Router>
+  ), document.getElementById('root'));
 registerServiceWorker();
