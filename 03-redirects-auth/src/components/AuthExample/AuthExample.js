@@ -34,4 +34,8 @@ class AuthExample extends React.Component {
 
 const Public = () => <h3>Public</h3>
 
+const fakeAuth = {
+  isAuthenticated: false
+}
+
 export default AuthExample;
