@@ -10,8 +10,6 @@ import {
   withRouter
 } from 'react-router-dom';
 
-
-
 class AuthExample extends React.Component {
   render(){
     return (
