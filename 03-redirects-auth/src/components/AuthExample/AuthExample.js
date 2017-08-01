@@ -50,7 +50,13 @@ const fakeAuth = {
   }
 };
 
-const AuthButton = withRouter( ({ history }) => (
+/*
+ withRouter takes in a component that returns a different component
+ with Router related properties such as { match, location, history } injected into it.
+ For a better understanding:
+  Refer to: https://github.com/sudowebdev/react-router/tree/master/misc-things/with-router
+*/
+ const AuthButton = withRouter( ({ history }) => (
   fakeAuth.isAuthenticated ? (
     <p>
     Welcome!
