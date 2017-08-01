@@ -23,7 +23,10 @@ class AuthExample extends React.Component {
             <li><Link to="/protected">Protected page</Link></li>
           </ul>
 
-          
+          <Route path="/public" component={Public} />
+          <Route path="/login" component={Login} />
+          <PrivateRoute path="/protected" component={Protected} />
+
         </div>
       </Router>
     );
