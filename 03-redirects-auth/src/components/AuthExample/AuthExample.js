@@ -37,6 +37,10 @@ const Public = () => <h3>Public</h3>
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
+    /*
+      In case of objects defined with Object literals
+      Another property/method of the same object can be accessed via "this"
+    */
     this.isAuthenticated = true;
     setTimeout(cb, 100); //fake async
   },
@@ -44,6 +48,6 @@ const fakeAuth = {
     this.isAuthenticated = false;
     setTimeout(cb, 100);
   }
-}
+};
 
 export default AuthExample;
