@@ -14,7 +14,19 @@ import {
 
 class AuthExample extends React.Component {
   render(){
-    return (<div>Hello World</div>);
+    return (
+      <Router>
+        <div>
+          <AuthButton />
+          <ul>
+            <li><Link to="/public">Public page</Link></li>
+            <li><Link to="/protected">Protected page</Link></li>
+          </ul>
+
+          
+        </div>
+      </Router>
+    );
   }
 }
 
