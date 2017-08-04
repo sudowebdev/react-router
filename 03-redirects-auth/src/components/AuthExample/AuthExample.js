@@ -56,7 +56,7 @@ const fakeAuth = {
  For a better understanding:
   Refer to: https://github.com/sudowebdev/react-router/tree/master/misc-things/with-router
 */
- const AuthButton = withRouter( ({ history }) => (
+const AuthButton = withRouter( ({ history }) => (
   fakeAuth.isAuthenticated ? (
     <p>
     Welcome!
@@ -68,5 +68,12 @@ const fakeAuth = {
     <p>You are not logged in</p>
   )
 ))
+
+
+const PrivateRoute = () => (
+  null;
+);
+
+
 
 export default AuthExample;
