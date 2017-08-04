@@ -24,7 +24,7 @@ class AuthExample extends React.Component {
           <Route path="/public" component={Public} />
           <Route path="/login" component={Login} />
           <PrivateRoute path="/protected" component={Protected} />
-
+          //PrivateRoute is a customDefined component unlike Route
         </div>
       </Router>
     );
@@ -69,8 +69,8 @@ const AuthButton = withRouter( ({ history }) => (
   )
 ))
 
-
-const PrivateRoute = ( {component: Component, ...rest} ) => (
+/* Defining PrivateRoute */
+const PrivateRoute = ( {component: Component {/*Destructuring with a different name. For more see README.md*/}, ...rest} ) => (
   <Route {...rest} render={props => (
         fakeAuth.isAuthenticated ? (
           <Component {...props} />
