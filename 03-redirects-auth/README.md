@@ -20,4 +20,7 @@
 ## For custom-defined PrivateRoute component
 
 **[Refer to this](https://reacttraining.com/react-router/web/api/Route/Route-props)**
-      
+
+## For documentation about Redirect
+
+**[Refer to this](https://reacttraining.com/react-router/web/api/Redirect)**
