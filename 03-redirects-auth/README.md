@@ -15,3 +15,9 @@
 
     console.log(foo); // 42
     console.log(bar); // true
+
+
+## For custom-defined PrivateRoute component
+
+**[Refer to this](https://reacttraining.com/react-router/web/api/Route/Route-props)**
+      
