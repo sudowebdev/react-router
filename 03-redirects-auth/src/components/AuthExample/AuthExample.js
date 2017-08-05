@@ -84,6 +84,9 @@ const PrivateRoute = ( {component: Component {/*Destructuring with a different n
     )} />
 );
 
+const Protected = () => (
+  <h3>Protected</h3>
+)
 
 
 export default AuthExample;
