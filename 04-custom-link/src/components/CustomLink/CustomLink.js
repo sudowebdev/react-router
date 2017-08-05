@@ -34,3 +34,15 @@ const OldSchoolMenuLink = ( { activeOnlyWhenExact, to, label } ) => (
     </div>
   )}
 )
+
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+)
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
