@@ -18,3 +18,11 @@ const CustomLinkExample = () => (
     </div>
   </Router>
 )
+
+const OldSchoolMenuLink = ( { activeOnlyWhenExact, to, label } ) => (
+  <Route path={to} exact={activeOnlyWhenExact} children={ ( { match } ) => (
+    <div className={match ? 'active' : ''}>
+      {match ? '> ' : ''}<Link to={to}>{label}</Link>
+    </div>
+  )}
+)
