@@ -88,5 +88,12 @@ const Protected = () => (
   <h3>Protected</h3>
 )
 
+class Login extends React.Component {
+
+  state = {
+    redirectToReferrer: false;
+  }
+}
+
 
 export default AuthExample;
